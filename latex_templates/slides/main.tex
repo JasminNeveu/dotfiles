@@ -1,0 +1,48 @@
+\documentclass{beamer}
+
+
+% sections to compile
+% \includeonly{sections/introduction}
+
+% preamble
+
+\input{preamble/macros}
+\input{preamble/metadata}
+\input{preamble/theme}
+\input{preamble/theorem}
+\input{preamble/packages}
+
+\begin{document}
+
+\begin{frame}[plain]
+  \titlepage
+  
+\end{frame}
+
+
+\include{sections/introduction}
+\include{sections/conclusion}
+
+
+\begin{frame}[noframenumbering,plain]
+  \centering
+  \vfill
+  {\usebeamercolor[fg]{frametitle}\LARGE\bfseries Thank you for your attention}
+  \vfill
+\end{frame}
+
+
+\appendix
+
+\include{sections/references}
+
+\section{Proofs}
+
+\begin{frame}{Proofs}
+  \begin{block}{Proof}
+    proof of ...
+  \end{block}
+\end{frame}
+
+
+\end{document}

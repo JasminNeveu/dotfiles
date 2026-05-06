@@ -1,0 +1,37 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{authblk}
+
+\input{preamble/packages}
+\input{preamble/macros}
+\input{preamble/theme}
+\input{preamble/theorem}
+\input{preamble/metadata}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+
+\begin{center}
+    \emails
+\end{center}
+
+\vspace{1cm}
+
+\begin{abstract}
+Your abstract here.
+\end{abstract}
+
+
+\tableofcontents
+
+\input{sections/introduction}
+oui \cite{key}
+\input{sections/conclusion}
+\input{sections/references}
+
+\appendix
+
+\end{document}

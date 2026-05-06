@@ -1,0 +1,33 @@
+\usetheme{Singapore}
+\usecolortheme{default}
+
+\providecommand{\insertconference}{}
+
+\setbeamercolor{headline}{bg=white, fg=black}
+
+\setbeamertemplate{navigation symbols}{}
+
+\setbeamertemplate{headline}{
+  \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1ex]{headline}%
+    \insertnavigation{\paperwidth}
+  \end{beamercolorbox}
+}
+
+\setbeamerfont{block title}{size=\normalsize}
+
+\setbeamerfont{conference}{size=\small}
+
+\setbeamertemplate{title page}{
+  \centering
+  \vfill
+  {\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par}
+  \vskip3em
+  {\usebeamerfont{author}\insertauthor\par}
+  \vskip2em
+  {\usebeamerfont{institute}\insertinstitute\par}
+  \vskip2em
+  {\usebeamerfont{conference}\bfseries\insertconference\par}
+  \vskip1em
+  {\usebeamerfont{conference}\insertdate\par}
+  \vfill
+}
